@@ -66,4 +66,18 @@ Feature: Adactin Functional TestCase
     And User Enter the Check-out date "25/06/2023"
     And user click the submit button
     
+     @TC-106
+   Scenario Outline: To verify whether locations in Select Hotel page are displayed according to them location selected in Search Hotel 
+    Given User Launch Browser "chrome"
+    And User Navigate to Adactin Url "http://adactinhotelapp.com/"
+    Then User Verify Adactin Login screen
+    And User login "ASHIQAFRIDI98" & "Kajarahima"
+    And User select the location "Sydney"
+    And User select the hotel "Hotel Creek"
+    And User select room type "Standard"
+    And User Select no of rooms "1 - One"
+    And User Enter the Check-in date "20/06/2023"
+    And User Enter the Check-out date "21/06/2023"
+    And user click the submit button
+    
     
